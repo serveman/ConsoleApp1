@@ -4,20 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.NewFolder1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Solution s = new Solution();
-
+            Solution0209 s = new Solution0209();
+            
             s.daysUntilExpiration();
             Console.ReadKey();
         }
     }
 
-    internal class Solution
+    internal class Solution0209
     {
         public void daysUntilExpiration()
         {
