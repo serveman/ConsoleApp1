@@ -12,17 +12,24 @@ namespace ConsoleApp1.NewFolder1._0210
         {
             Solution0210 solution0210 = new Solution0210();
 
-            solution0210.ArrayTest();
+            solution0210.ExampleArrayAndForeach();
             Console.ReadKey();
         }
     }
 
     public class Solution0210
     {
-        public void ArrayTest()
+        public void ExampleArrayAndForeach()
         {
-            Console.WriteLine("Hello");
-            return;
+            string[] names = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+
+            foreach ( string name in names )
+            {
+                if ( name.ToUpper().StartsWith("B") )
+                {
+                    Console.WriteLine(name);
+                }
+            }
         }
     }
 }
