@@ -27,7 +27,10 @@ namespace ConsoleApp1.NewFolder1._0210
                 if (i % 3 == 0) Fizz = "Fizz"; else Fizz = "";
                 if (i % 5 == 0) Buzz = "Buzz"; else Buzz = "";
 
-                Console.WriteLine($"{i} - {Fizz}{Buzz}");
+                Console.WriteLine(
+                    $"{i} " + 
+                    ((Fizz == "" && Buzz == "") ? "" : "-") +
+                    $" {Fizz}{Buzz}");
             }
         }
     }
