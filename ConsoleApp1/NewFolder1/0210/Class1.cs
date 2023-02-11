@@ -11,7 +11,7 @@ namespace ConsoleApp1.NewFolder1._0210
         static void Main(string[] args)
         {
             Solution0210 solution0210 = new Solution0210();
-
+            
             solution0210.ExampleArrayAndForeach();
             Console.ReadKey();
         }
@@ -22,6 +22,8 @@ namespace ConsoleApp1.NewFolder1._0210
         public void ExampleArrayAndForeach()
         {
             string[] names = { "B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179" };
+
+            // TODO - 이것이 투두여 !!
 
             foreach ( string name in names )
             {
