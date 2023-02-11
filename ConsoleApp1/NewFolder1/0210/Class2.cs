@@ -11,7 +11,7 @@ namespace ConsoleApp1.NewFolder1._0210
         static void Main(string[] args)
         {
             Solution021101 s = new Solution021101();
-            s.coinThrow();
+            s.permission();
             Console.ReadKey();
         }
     }
@@ -23,6 +23,39 @@ namespace ConsoleApp1.NewFolder1._0210
             Random roll = new Random();
             string result = (roll.Next(1, 3) == 1) ? "heads" : "tails";
             Console.WriteLine(result);
+        }
+
+        public void permission()
+        {
+            string permission = "Admin|Manager";
+            int level = 53;
+
+            if(permission.Contains("Admin"))
+            {
+                if(level > 55)
+                {
+                    Console.WriteLine("Welcome, Super Admin user.");
+                }
+                else
+                {
+                    Console.WriteLine("Welcome, Admin user.");
+                }
+            }
+            else if(permission.Contains("Manager"))
+            {
+                if(level >= 20)
+                {
+                    Console.WriteLine("Contact an Admin for access.");
+                }
+                else
+                {
+                    Console.WriteLine("You do not have sufficient privileges.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("You do net have sufficient privileges.");
+            }
         }
     }
 }
